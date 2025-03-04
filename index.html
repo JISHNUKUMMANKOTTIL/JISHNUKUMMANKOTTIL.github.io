@@ -1,1 +1,150 @@
-</h1>Jishnu<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio website">
+    <title>Jishnu krishnakumar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .projects, .skills, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project, .skill {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 300px;
+        }
+        .project img, .skill img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Creative Thinker</p>
+</header>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hi! I'm [Your Name], a passionate web developer with expertise in creating beautiful, functional websites. I specialize in front-end development and have experience working with various web technologies. I'm always learning and improving my skills to stay ahead in the tech world.</p>
+</section>
+
+<section id="projects" class="container">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A brief description of this project. It involves technologies such as HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>A brief description of this project. It involves technologies such as React, Node.js, and MongoDB.</p>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>A brief description of this project. It involves technologies such as WordPress, PHP, and MySQL.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <img src="html_css_logo.png" alt="HTML & CSS">
+            <h3>HTML & CSS</h3>
+            <p>I have extensive experience building websites using HTML and CSS to create visually appealing designs.</p>
+        </div>
+        <div class="skill">
+            <img src="javascript_logo.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <p>I am proficient in JavaScript for adding interactive elements and dynamic functionality to web pages.</p>
+        </div>
+        <div class="skill">
+            <img src="react_logo.png" alt="React">
+            <h3>React</h3>
+            <p>I use React to build responsive and high-performance user interfaces for modern web applications.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
